@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSSShuttle 2026</title>
+  <meta name="description" content="SSSShuttle loop service for Students, Swift, St★rs 2026 on Jun 8, 2026." />
+  <style>
+    :root {
+      --card: rgba(255,255,255,.86);
+      --shadow: 0 24px 70px rgba(88, 40, 20, .18);
+      font-family: "SF Pro Display", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      min-height: 100vh;
+    }
+
+    .nosplit {
+      display: grid;
+      align-items: stretch;
+      gap: 1rem; /* was 2rem */
+
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+
+      background: var(--card);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: stretch;
+      gap: 1rem; /* was 2rem */
+
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+
+      background: var(--card);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .split > * {
+      min-width: 0;
+    }
+
+    .split img {
+      width: calc(100% + 2rem);
+      height: calc(100% + 4rem);
+
+      object-fit: cover;
+      display: block;
+
+      margin: -2rem 0 -2rem -2rem;
+
+      border-radius: 24px 0 0 24px;
+    }
+
+    main > img {
+      display: block;
+      margin: 0rem auto;
+      width: 700px;
+      height: auto;
+    }
+
+    /* .split img {
+      height: 600px;
+      flex-shrink: 0;
+      margin: -2rem 0rem -2rem -2rem;
+      border-radius: 24px 0px 0px 24px;
+    } */
+    a { color: inherit; }
+
+    .footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: #767676;
+      font-size: 0.95rem;
+    }
+
+    .footer a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 700px) {
+      .split {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .split img {
+        width: calc(100% + 4rem);
+        height: auto;
+        margin: -2rem -2rem 0 -2rem;
+        border-radius: 24px 24px 0 0;
+      }
+
+      main > img {
+        width: min(700px, 90vw);
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="./vroom.png">
+    <section class="nosplit" style="margin-top: -0rem;">
+      <div>
+        <h1><span style="color: orange;">SSS</span>Shuttle</h1>
+        <h3>Cupertino's most unlikely public transit service</h3>
+        <p>From Students, Swift, St★rs & CommunityKit HQ to Courtyard and Hilton Garden Inn.</p>
+      </div>
+    </section>
+
+    <section class="split" style="margin-top: -0rem;">
+      <img src="./map.png">
+      <div>
+        <h1><span style="color: orange;">Looping</span> Service</h1>
+        <h2 style="color: #767676;">from 6pm to 7pm and 10pm to 11pm</h2>
+        <h3><code>while (6...7).contains(time) || (10...11).contains(time) {</code></h3>
+
+        <h3 style="margin-left: 12px;"><span style="color: orange;">Stop 1: </span>Residence Inn by Marriott San Jose Cupertino</h3>
+        <p style="margin-left: 12px; margin-top: 0;">Students, Swift, St★rs & CommunityKit HQ</p>
+        <div style="height: 1rem;"></div>
+
+        <h3 style="margin-left: 12px;"><span style="color: orange;">Stop 2: </span>Courtyard by Marriott San Jose Cupertino</h3>
+        <div style="height: 1rem;"></div>
+        <h3 style="margin-left: 12px;"><span style="color: orange;">Stop 3: </span>Hilton Garden Inn Cupertino</h3>
+        <h3><code>}</code></h3>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <strong><span style="color: orange;">SSS</span>Shuttle</strong><br />
+    <a href="https://swiftin.sg/sss">Students, Swift, St★rs</a>
+  </footer>
+</body>
+</html>
